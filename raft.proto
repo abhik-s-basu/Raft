@@ -45,7 +45,7 @@ message Entry {
 
 message LogRequest {
     int32 leaderID = 1;
-    int32 term = 2;
+    int32 leaderTerm = 2;
     int32 prefixLen = 3;
     int32 prefixTerm = 4;
     int32 leaderCommit = 5;

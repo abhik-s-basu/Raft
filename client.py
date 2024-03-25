@@ -25,18 +25,18 @@ class Client():
         if self.curr_leader_idx == -1:
             self.curr_leader_idx = random_int = random.randint(0, 4)
         self.channel = grpc.insecure_channel(f"{self.node_list[self.curr_leader_idx].ip}:{self.node_list[self.curr_leader_idx].ip}")
-        self.stub = client_pb2_grpc.ClientStub(self.channel)
+        self.stub = raft_pb2_grpc.ClientStub(self.channel)
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-        request = client_pb2.SetRequest(key = k, value = v)
+        request = raft_pb2.SetRequest(key = k, value = v)
         # response = self.stub. yaha dekhna hoga
 
     def get(self, k):
         if self.curr_leader_idx == -1:
             self.curr_leader_idx = random_int = random.randint(0, 4)
         self.channel = grpc.insecure_channel(f"{self.node_list[self.curr_leader_idx].ip}:{self.node_list[self.curr_leader_idx].ip}")
-        self.stub = client_pb2_grpc.ClientStub(self.channel)
+        self.stub = raft_pb2_grpc.ClientStub(self.channel)
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-        request = client_pb2.GetRequest(key = k, value = v)
+        request = raft_pb2.GetRequest(key = k, value = v)
         # response = self.stub. yaha dekhna hoga
 
 if __name__ == "__main__":
