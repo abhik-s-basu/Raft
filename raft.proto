@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+message VoteRequest {
+    int32 cid = 1;
+    int32 cTerm = 2;
+    int32 cLogLength = 3;
+    int32 cLogTerm = 4;
+}
+
+message VoteResponse {
+    enum Status {
+        SUCCCESS = 0;
+        FAIL = 1;
+    }
+    Status status = 1;
+    int32 term = 2;
+    int32 nodeID = 3;
+}
+
+message ClientResponse {
+  enum Status {
+    SUCCESS = 0;
+    FAIL = 1;
+  }
+  Status status = 1;
+  int32 leaderID = 2;
+  string data = 3; 
+}
+
+message SetRequest {
+    string key = 1;
+    string value = 2;
+}
+
+message GetRequest {
+    string key = 1;
+    string value = 2;
+}
+
+message Entry {
+    int32 term = 1;
+    repeated string update = 2;
+
+}
+
+message LogRequest {
+    int32 leaderID = 1;
+    int32 term = 2;
+    int32 prefixLen = 3;
+    int32 prefixTerm = 4;
+    int32 leaderCommit = 5;
+    repeated Entry entries = 6;
+}
+
+message AppendEntriesResponse{
+    enum Status {
+    SUCCESS = 0;
+    FAIL = 1;
+    }
+    int32 term = 1;
+    int32 ack = 2;
+    int32 nodeID = 3;
+    Status status = 4;
+}
+
+service Raft {
+    rpc RequestVote(VoteRequest) returns (VoteResponse);
+    rpc SetValue(SetRequest) returns (ClientResponse);
+    rpc GetValue(GetRequest) returns (ClientResponse);
+    rpc AppendEntries(LogRequest) returns (AppendEntriesResponse);
+}

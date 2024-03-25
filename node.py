@@ -6,5 +6,3 @@ ip_port_list = [
     {"ip": "localhost", "port": 50055},
     # Add more entries as needed
 ]
-
-class 
