@@ -51,7 +51,7 @@ class Node():
         self.matchIndex = []
         self.applied_entries = {}
         self.term= 0
-        # self.start()
+        self.start()
     # helper functions
 
     def start(self):
@@ -59,7 +59,8 @@ class Node():
         self.timer.start()
     
     def timer_init(self):
-        self.timer_interval = rnd.randint(150,300) / 1000
+        # self.timer_interval = rnd.randint(150,300) / 1000
+        self.timer_interval = rnd.randint(5,10) 
         self.timer = Timer(self.timer_interval, self.timer_follower)
     
     def timer_follower(self):
@@ -69,18 +70,22 @@ class Node():
                 self.start_election()
     
     def timer_reinit(self):
-        self.timer_interval = rnd.randint(150,300) / 1000
+        # self.timer_interval = rnd.randint(150,300) / 1000
+        self.timer_interval = rnd.randint(5,10) 
 
     def timer_reset(self):
         self.timer.cancel()
+        # print(f"{self.timer_interval}")
         self.timer = Timer(self.timer_interval, self.timer_follower)
+        self.timer.start()
 
-    def update_term(self, t = 1):
+    def update_terms(self, t):
+        with term_lock:    
+            self.term = t
+    
+    def update_term(self):
         with term_lock:
-            if t == 1:
-                self.term += 1
-            else: 
-                self.term = t
+            self.term += 1
     
     def update_state(self, state:State):
         with state_lock:
@@ -105,16 +110,21 @@ class Node():
         requests = []
         votes = [0 for i in range(len(self.neighbours))]
         for i in self.neighbours:
-            thread = Thread(target = self.request_votes, args = (i, votes))
-            requests.append(thread)
-            thread.start()
-        
+            if i.id == self.id:
+                print("Voted for myself")
+                votes[i.id] = 1
+                pass
+            else:
+                thread = Thread(target = self.request_votes, args = (i, votes))
+                requests.append(thread)
+                thread.start()
+                # self.request_votes(i, votes)
+
         for i in requests: 
             i.join()
         
         if self.state != State.CANDIDATE:
             return
-        
         if sum(votes) > len(votes)//2:
             print(f"Node {self.id} becomes leader for term {self.term}")
             self.become_leader()
@@ -131,31 +141,44 @@ class Node():
         stub = raft_pb2_grpc.RaftStub(channel)
         if self.state != State.CANDIDATE:
             return
-        request = raft_pb2.VoteRequest(cTerm = self.term,
+        cLogTerm = 0
+        if len(self.log_table) > 0:
+            cLogTerm = self.log_table[len(self.log_table)-1]['term']
+
+        try:
+            request = raft_pb2.VoteRequest(cTerm = self.term,
             cid = self.id,
-            cLogLength = self.lastApplied,
-            cLogTerm = len(self.log_table) - 1)
-        response = stub.RequestVote(request)
-        if response.term > self.term:
-            self.term = response.term
-            self.become_follower()
-        elif response.result == raft_pb2.VoteResponse.SUCCESS and self.term >= response.term:
-            votes[i.id] = 1
+            cLogLength = len(self.log_table),
+            cLogTerm = cLogTerm)
+
+            response = stub.RequestVote(request)
+            if response.term > self.term:
+                self.update_terms(response.term)
+                # print(f"{self.term} hello")
+                self.become_follower()
+            elif response.status == True and self.term >= response.term:
+                # print("Helllloooo")
+                votes[i.id] = 1
+        except Exception as e: 
+            print(e)
     
     def become_follower(self):
         self.update_state(State.FOLLOWER)
-        self.reset_timer()
+        print(f"{self.id} became follower")
+        self.timer_reset()
     
     def become_leader(self):
         if self.status == Status.CRASHED:
             return
-        
+        print(f"{self.id} became leader")
         self.nextIndex = [len(self.log_table)]* len(self.neighbours)
         self.matchIndex = [0]  * len(self.neighbours)
+        self.leader_id = self.id
 
         if self.state == State.CANDIDATE:
+            print("Became Leader")
             self.update_state(State.LEADER)
-            self.heartbeat_timer()
+            # self.heartbeat_timer()
             self.leader_id = self.id
 
     def send_heartbeat(self, addr):
@@ -187,8 +210,8 @@ class Node():
         
         for t in pool:
             t.join()
-        
-        self.leader_timer = Timer(50/1000, self.heartbeat_timer)
+
+        self.leader_timer = Timer(1, self.heartbeat_timer)
         self.leader_timer.start() # leader lease comes here
 
 class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
@@ -203,13 +226,28 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         cLogTerm = request.cLogTerm
 
         if self.status == Status.CRASHED:
-            return raft_pb2.VoteResponse(status = raft_pb2.VoteResponse.FAIL, term = self.term, nodeID = cid)
+            return raft_pb2.VoteResponse(status = False, term = self.term, nodeID = cid)
+        
+        if cTerm > self.term:
+            self.update_terms(cTerm)
+            self.become_follower()
+            self.voted_for = -1
+        
+        lastTerm = 0
+        if len(self.log_table) > 0:
+            lastTerm = self.log_table[len(self.log_table)-1]['term']
+        logOk = (cLogTerm > lastTerm) or (cLogTerm == lastTerm and cLogLength >= len(self.log_table))
+        # print(self.voted_for)
+        if cTerm == self.term and logOk and (self.voted_for == -1 or self.voted_for == cid):
+            self.voted_for = cid
+            print(f"Voted for {cid} in term {cTerm}")
+            return raft_pb2.VoteResponse(status = True, term = self.term, nodeID = cid)
+        else:
+            print(f"Voted denied for {cid} in term {cTerm}")
+            return raft_pb2.VoteResponse(status = False, term = self.term, nodeID = cid)
 
-        ok = True
-        ok = cTerm < self.term and self.last_vote_term >= cTerm and cLogLength < len(self.log_table)
-        if cLogLength == len(self.log_table):
-            if self.log_table[-1]['term'] != cLogTerm:
-                result = False
+
+        
 
 def run(handler: RaftHandler):
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -217,19 +255,16 @@ def run(handler: RaftHandler):
         handler, server
     )
     server.add_insecure_port(f'[::]:{handler.address.port}')
-
-    if handler.id==2:
-        run2()
     # print(f"Server has been started with address {handler.address}")
     server.start()
     server.wait_for_termination()
 
-def run2():
-    with grpc.insecure_channel('localhost:50051') as channel:
-        stub = raft_pb2_grpc.RaftStub(channel)
-        # print("test")
-        response = stub.RequestVote(raft_pb2.VoteRequest(cid=1, cTerm=2, cLogLength=3, cLogTerm=4))
-        print("Greeter client received: " + str(response.cid) + " ")
+# def run2():
+#     with grpc.insecure_channel('localhost:50051') as channel:
+#         stub = raft_pb2_grpc.RaftStub(channel)
+#         # print("test")
+#         response = stub.RequestVote(raft_pb2.VoteRequest(cid=1, cTerm=2, cLogLength=3, cLogTerm=4))
+#         print("Greeter client received: " + str(response.cid) + " ")
 
 if __name__ == "__main__":
     global NODE_ADDR
@@ -246,12 +281,4 @@ if __name__ == "__main__":
             n_ip = n_address[0]
             n_port = int(n_address[1])
             neighbours.append(Address(int(n_id), n_ip, n_port))
-    
-
-    # node_obj = Node(id, NODE_ADDR, neighbours)
-
-    try:
-        pass
-        run(RaftHandler(id, address, neighbours))
-    except Exception as e:
-        print(e)
+    run(RaftHandler(id, address, neighbours))

@@ -12,7 +12,7 @@ message VoteResponse {
         SUCCCESS = 0;
         FAIL = 1;
     }
-    Status status = 1;
+    bool status = 1;
     int32 term = 2;
     int32 nodeID = 3;
 }
@@ -22,7 +22,7 @@ message ClientResponse {
     SUCCESS = 0;
     FAIL = 1;
   }
-  Status status = 1;
+  bool status = 1;
   int32 leaderID = 2;
   string data = 3; 
 }
