@@ -50,8 +50,10 @@ class Node():
         self.nextIndex = []
         self.matchIndex = []
         self.applied_entries = {}
-        self.start()
+        self.term= 0
+        # self.start()
     # helper functions
+
     def start(self):
         self.timer_init()
         self.timer.start()
@@ -189,7 +191,7 @@ class Node():
         self.leader_timer = Timer(50/1000, self.heartbeat_timer)
         self.leader_timer.start() # leader lease comes here
 
-class RaftHandler(raft_pb2_grpc.RaftServicer,Node):
+class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
     def __init__(self, id:int, address: Address, neighbours):
         super().__init__(id, address,  neighbours)
         print(f"The server starts at {address.ip}:{address.port}")
@@ -208,8 +210,29 @@ class RaftHandler(raft_pb2_grpc.RaftServicer,Node):
         if cLogLength == len(self.log_table):
             if self.log_table[-1]['term'] != cLogTerm:
                 result = False
+
+def run(handler: RaftHandler):
+    server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+    raft_pb2_grpc.add_RaftServicer_to_server(
+        handler, server
+    )
+    server.add_insecure_port(f'[::]:{handler.address.port}')
+
+    if handler.id==2:
+        run2()
+    # print(f"Server has been started with address {handler.address}")
+    server.start()
+    server.wait_for_termination()
+
+def run2():
+    with grpc.insecure_channel('localhost:50051') as channel:
+        stub = raft_pb2_grpc.RaftStub(channel)
+        # print("test")
+        response = stub.RequestVote(raft_pb2.VoteRequest(cid=1, cTerm=2, cLogLength=3, cLogTerm=4))
+        print("Greeter client received: " + str(response.cid) + " ")
+
 if __name__ == "__main__":
-    global NODE_ADDRESS
+    global NODE_ADDR
     neighbours = []
     id = int(sys.argv[1])
     address = None
@@ -222,6 +245,13 @@ if __name__ == "__main__":
 
             n_ip = n_address[0]
             n_port = int(n_address[1])
-            neighbours.append(Address(int(n_id), n_ip, n_port))    
+            neighbours.append(Address(int(n_id), n_ip, n_port))
+    
 
-    #
+    # node_obj = Node(id, NODE_ADDR, neighbours)
+
+    try:
+        pass
+        run(RaftHandler(id, address, neighbours))
+    except Exception as e:
+        print(e)
