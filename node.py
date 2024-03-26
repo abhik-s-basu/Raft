@@ -2,6 +2,7 @@ import grpc
 import raft_pb2_grpc 
 import raft_pb2 
 import sys
+import math
 import random as rnd
 from enum import Enum
 from concurrent import futures
@@ -75,7 +76,7 @@ class Node():
 
     def timer_reset(self):
         self.timer.cancel()
-        # print(f"{self.timer_interval}")
+        # print(f"{self.id} timer got reset")
         self.timer = Timer(self.timer_interval, self.timer_follower)
         self.timer.start()
 
@@ -160,11 +161,12 @@ class Node():
                 # print("Helllloooo")
                 votes[i.id] = 1
         except Exception as e: 
-            print(e)
+            pass
+            # print(e)
     
     def become_follower(self):
         self.update_state(State.FOLLOWER)
-        print(f"{self.id} became follower")
+        # print(f"{self.id} became follower")
         self.timer_reset()
     
     def become_leader(self):
@@ -178,8 +180,10 @@ class Node():
         if self.state == State.CANDIDATE:
             print("Became Leader")
             self.update_state(State.LEADER)
-            # self.heartbeat_timer()
             self.leader_id = self.id
+            # print("Test1")
+            self.heartbeat_timer()
+            # print("Test2")
 
     def send_heartbeat(self, addr):
         if self.status == Status.CRASHED:
@@ -187,14 +191,50 @@ class Node():
         
         channel = grpc.insecure_channel(f"{addr.ip}:{addr.port}")
         stub = raft_pb2_grpc.RaftStub(channel)
-        # some if conditions for log replication Akshansh tbd
-        request = raft_pb2.LogRequest(leaderID = self.id,leaderTerm = self.term,
-                        prefixLen = self.nextIndex[addr.id] - 2,
-                        prefixTerm = self.log_table[self.nextIndex[addr.id] - 2]['term'],
-                        entries = [],
-                    leaderCommit = self.commitIndex)
-        response = stub.AppendEntries(request)
-        # akshansh tbd more code here
+        request= {}
+
+        # Log Replication
+
+        prefixLen= self.nextIndex[addr.id]
+        prefixTerm= 0
+        if prefixLen>0:
+            prefixTerm= self.log_table[prefixLen-1]['term']
+
+        appending_entries= self.log_table[prefixLen:]
+
+        if self.nextIndex[addr.id]<=len(self.log_table):
+            request = raft_pb2.LogRequest(leaderID = self.id,leaderTerm = self.term,
+                            prefixLen = prefixLen,
+                            prefixTerm = prefixTerm,
+                            entries = appending_entries,
+                            leaderCommit = self.commitIndex)
+
+        else:
+            request = raft_pb2.LogRequest(leaderID = self.id,leaderTerm = self.term,
+                            prefixLen = prefixLen,
+                            prefixTerm = prefixTerm,
+                            entries = [],
+                            leaderCommit = self.commitIndex)
+
+        try:
+            print(f"Sending heartbeat for {self.term}")
+            response = stub.AppendEntries(request)
+            print(f"Term of {response.id}is {response.term}")
+            if response.term==self.term and self.state==State.LEADER:
+                if response.status==True and response.ack>=self.matchIndex[response.nodeID]:
+                    self.nextIndex[response.nodeID]= response.ack
+                    self.matchIndex= response.ack
+                    # Commit Log Entries
+                
+                elif self.nextIndex[response.nodeID]>0:
+                    self.nextIndex[response.nodeID]= self.nextIndex[response.nodeID]-1
+                    self.send_heartbeat(addr)
+            elif response.term>self.term:
+                self.update_term= response.term
+                self.voted_for= -1
+                self.become_follower()
+        except:
+            pass
     
     def heartbeat_timer(self):
         if self.status == Status.CRASHED:
@@ -202,6 +242,7 @@ class Node():
         if self.state != State.LEADER:
             return
         pool = []
+        # print("Test3")
         for n in self.neighbours:
             if n.id != NODE_ADDR.id:
                 thread = Thread(target = self.send_heartbeat, args = (n,))
@@ -210,8 +251,8 @@ class Node():
         
         for t in pool:
             t.join()
-
-        self.leader_timer = Timer(1, self.heartbeat_timer)
+        # self.leader_timer.cancel()
+        self.leader_timer = Timer(3, self.heartbeat_timer)
         self.leader_timer.start() # leader lease comes here
 
 class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
@@ -246,7 +287,61 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
             print(f"Voted denied for {cid} in term {cTerm}")
             return raft_pb2.VoteResponse(status = False, term = self.term, nodeID = cid)
 
+    def AppendEntries(self, request, context):
+        if self.status== Status.CRASHED:
+            return raft_pb2.AppendEntriesResponse(status= False, ack = 0, nodeID = self.id, term=self.term)
+        # print("here 1")
+        leaderID= request.leaderID
+        term= request.leaderTerm
+        prefixLen= request.prefixLen
+        prefixTerm= request.prefixTerm
+        leaderCommit= request.leaderCommit
+        suffix= request.entries
+        print(f"{term} and {self.term}")
+        if term>self.term:
+            self.update_term(term)
+            self.voted_for= -1
+            self.become_follower()
+            # self.timer_reset()  # check it once
+        elif term==self.term:
+            # self.state = State.FOLLOWER
+            self.become_follower()
+            # self.timer_reset()  # check it once
+            self.leader_id= leaderID
+        
+        # print("here 2")
+        
+        logOk= (len(self.log_table)>prefixLen) and (prefixLen==0 or self.log_table[prefixLen-1]['term']==prefixTerm)
 
+        if term==self.term and logOk:
+            self.actualAppendEntries(prefixLen, leaderCommit, suffix)
+            ack= prefixLen+len(suffix)
+            print("Hello")
+            return raft_pb2.AppendEntriesResponse(status= True, ack= ack, nodeID= self.id, term= self.term)
+        else:
+            print("hellllloooo")
+            return raft_pb2.AppendEntriesResponse(status= False, ack= 0, nodeID= self.id, term= self.term)
+        
+
+    def actualAppendEntries(self, prefixLen, leaderCommit, suffix):
+        suffixLen= len(suffix)
+        logTableLen= len(self.log_table)
+
+        if suffixLen>0 and logTableLen>prefixLen:
+            index= math.min(logTableLen, prefixLen+suffixLen)-1
+
+            if self.log_table[index]['term']!=suffix[index-prefixLen]['term']:
+                self.log_table= self.log_table[:prefixLen]
+        
+        if prefixLen+suffixLen>logTableLen:
+            for i in range(logTableLen-prefixLen, suffixLen):
+                self.log_table.append(suffix[i])
+        
+        if leaderCommit>self.commitIndex:
+            for i in range(self.commitIndex, leaderCommit):
+                # Commit to log file
+                continue
+            self.commitIndex= leaderCommit
         
 
 def run(handler: RaftHandler):
@@ -258,13 +353,6 @@ def run(handler: RaftHandler):
     # print(f"Server has been started with address {handler.address}")
     server.start()
     server.wait_for_termination()
-
-# def run2():
-#     with grpc.insecure_channel('localhost:50051') as channel:
-#         stub = raft_pb2_grpc.RaftStub(channel)
-#         # print("test")
-#         response = stub.RequestVote(raft_pb2.VoteRequest(cid=1, cTerm=2, cLogLength=3, cLogTerm=4))
-#         print("Greeter client received: " + str(response.cid) + " ")
 
 if __name__ == "__main__":
     global NODE_ADDR
