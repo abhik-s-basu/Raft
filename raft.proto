@@ -32,11 +32,12 @@ message SetRequest {
 
 message GetRequest {
     string key = 1;
-    string value = 2;
 }
 
 message Entry {
-    repeated string LogItems = 1;
+    int32 term = 1;
+    repeated string update = 2;
+
 }
 
 message LogRequest {

@@ -1,0 +1,4080 @@
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 2
+0 became leader
+Became Leader
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Voted denied for 3 in term 1
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 2 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 1 in term 3
+Voted for 1 in term 4
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 1 in term 9
+Voted for 1 in term 10
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 1 in term 11
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 1 in term 15
+Node 0 becomes leader for term 15
+0 became leader
+Became Leader
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+Sending heartbeat for 15
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+0 became leader
+Became Leader
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+0 became leader
+Became Leader
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 1 in term 2
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+0 became leader
+Became Leader
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+0 became leader
+Became Leader
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+0 became leader
+Became Leader
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Voted denied for 2 in term 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+The server starts at [::]:50051
+2 and 0
+2 and 0
+The server starts at [::]:50051
+2 and 0
+Node 0 election timer timed out, Starting election
+Voted for myself
+2 and 2
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 3
+0 became leader
+Became Leader
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+Sending heartbeat for 3
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+0 became leader
+Became Leader
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+0 became leader
+Became Leader
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+Sending heartbeat for 1
+The server starts at [::]:50051
+Voted for 2 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50051
+1 and 0
+1 and 0
+1 and 0
+Node 0 election timer timed out, Starting election
+Voted for myself
+1 and 1
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 2
+0 became leader
+Became Leader
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Voted denied for 3 in term 1
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+Sending heartbeat for 2
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 1 in term 2
+Voted denied for 2 in term 1
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 1 in term 3
+Node 0 becomes leader for term 3
+0 became leader
+Became Leader
+The server starts at [::]:50051
+Voted for 1 in term 1
+1 and 1
+1 and 1
+1 and 1
+Voted denied for 3 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+Node 0 Became Leader
+Voted denied for 3 in term 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+Node 0 Became Leader
+The server starts at [::]:50051
+Voted for 1 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
