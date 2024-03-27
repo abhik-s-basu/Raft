@@ -1233,3 +1233,677 @@ Node 1 election timer timed out, Starting election
 Voted for myself
 Node 1 becomes leader for term 1
 Node 1 Became Leader
+The server starts at [::]:50052
+Voted for 0 in term 2
+Voted for 0 in term 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+The server starts at [::]:50052
+Node 1 election timer timed out, Starting election
+Voted for myself
+Voted for 2 in term 1
+Node 1 election timer timed out, Starting election
+Voted for myself
+Node 1 becomes leader for term 2
+Node 1 Became Leader
+Voted denied for 0 in term 2
+Voted denied for 3 in term 1
+The server starts at [::]:50052
+3 and 0
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+3 and 3
+The server starts at [::]:50052
+Voted for 0 in term 1
+Voted for 0 in term 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Node 1 election timer timed out, Starting election
+Voted for myself
+Node 1 becomes leader for term 1
+Node 1 Became Leader
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+Node 1 election timer timed out, Starting election
+Voted for myself
+Voted denied for 3 in term 2
+Node 1 becomes leader for term 2
+Node 1 Became Leader
+The server starts at [::]:50052
+Node 1 election timer timed out, Starting election
+Voted for myself
+Node 1 becomes leader for term 1
+Node 1 Became Leader
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+Voted for 2 in term 2
+Voted for 2 in term 3
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Node 1 election timer timed out, Starting election
+Voted for myself
+Node 1 becomes leader for term 1
+Node 1 Became Leader
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Node 1 election timer timed out, Starting election
+Voted for myself
+Node 1 becomes leader for term 1
+Node 1 Became Leader
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Node 1 election timer timed out, Starting election
+Voted for myself
+Node 1 becomes leader for term 1
+Node 1 Became Leader
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50052
+Node 1 election timer timed out, Starting election
+Voted for myself
+Node 1 becomes leader for term 1
+Node 1 Became Leader
+The server starts at [::]:50052
+Voted for 0 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1

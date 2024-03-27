@@ -59,10 +59,14 @@ class Node():
             dump_file.flush()
     
     def write_to_logs(self, term, op, key, value):
+        # print("In write_to_logs function")
         dump_text = f"{op} {key} {value} {term}"
-        with open(self.log_file_path, 'a') as log_file: 
+        with open(self.log_file_path, 'a') as log_file:
+            # print("file opened to write logs")
+            # print(f"dump text: {dump_text}")
             log_file.write(dump_text + '\n')
             log_file.flush()
+
     def print_and_write(self, message):
         print(message)
         self.write_to_dump(message)
@@ -193,13 +197,14 @@ class Node():
             self.print_and_write(f"Node {self.id} Became Leader")
             self.update_state(State.LEADER)
             print(self.term)
+            self.nextIndex = [len(self.log_table)]* len(self.neighbours)
+            self.matchIndex = [0]  * len(self.neighbours)
             entry = {
                 'term': self.term,
                 'update': ['NO OP', "", ""]
             }
             self.log_table.append(entry)
-            self.nextIndex = [len(self.log_table)]* len(self.neighbours)
-            self.matchIndex = [0]  * len(self.neighbours)
+            self.matchIndex[self.id] = len(self.log_table)
             self.leader_id = self.id
             # print("Test1")
             self.heartbeat_timer()
@@ -217,14 +222,18 @@ class Node():
 
         prefixLen= self.nextIndex[addr.id]
         prefixTerm= 0
-        print(prefixLen, prefixTerm)
+        print(f"Prefix length {prefixLen}")
+
         if prefixLen>0:
             prefixTerm= self.log_table[prefixLen-1]['term']
-        print(prefixTerm)
+        print(f"Prefix Term: {prefixTerm}")
+        print(f"Length Log table in send heartbeat {len(self.log_table)}")
 
         appending_entries= self.log_table[prefixLen:]
-
+        print(f"appending_entries {appending_entries}")
+        print(f"leader commit {self.commitIndex}")
         if self.nextIndex[addr.id]<=len(self.log_table):
+            print("went in this request line 230")
             request = raft_pb2.LogRequest(leaderID = self.id,leaderTerm = self.term,
                             prefixLen = prefixLen,
                             prefixTerm = prefixTerm,
@@ -239,13 +248,19 @@ class Node():
                             leaderCommit = self.commitIndex)
 
         try:
+            print("sent to append entries")
             # self.print_and_write(f"Sending heartbeat for {self.term}")
             response = stub.AppendEntries(request)
-            self.print_and_write(f"Term of {response.id}is {response.term}")
+            print("received from append entries")
+            print(f"Response ID: {response.nodeID}")
+            print(f"response term: {response.term}")
+            # self.print_and_write(f"Term of {response.id}is {response.term}")
             if response.term==self.term and self.state==State.LEADER:
                 if response.status==True and response.ack>=self.matchIndex[response.nodeID]:
                     self.nextIndex[response.nodeID]= response.ack
-                    self.matchIndex= response.ack
+                    self.matchIndex[response.nodeID]= response.ack #BIG CHANGE HERE
+                    print("WILL COMMIT HERE")
+                    # COMMIT HERE
                 
                 elif self.nextIndex[response.nodeID]>0:
                     self.nextIndex[response.nodeID]= self.nextIndex[response.nodeID]-1
@@ -276,33 +291,46 @@ class Node():
         for t in pool:
             t.join()
         
+        # YEH SECTION THEEK KARNA HAI
         acks = [0]* len(self.log_table)
-        print(acks)
-        print(self.matchIndex)
+        print(f"test acks: {acks}")
+        print(f"self.matchIndex: {self.matchIndex}")
         for i in range(len(acks)):
             for j in self.neighbours:
                 if self.matchIndex[j.id] >= i:
                     acks[i] += 1
-        print(acks)
+        print(f"real acks: {acks}")
         ready = -1
         for i in range(len(acks)):
             if acks[i] > majority:
                 ready += 1
+        print(f"commit index: {self.commitIndex}")
         if ready != -1 and ready > self.commitIndex:
             for i in range(self.commitIndex, ready,1):
                 key = self.log_table[i]['update'][1]
                 value = self.log_table[i]['update'][2]
                 self.applied_entries[key] = value
+                print("Going to write logs")
                 self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
                                     self.log_table[i]['update'][1], self.log_table[i]['update'][2])
         
         self.commitIndex = ready
         self.lastApplied = ready-1
 
+        # PROBABLY YAHA TAK
 
+        
         # self.leader_timer.cancel()
         self.leader_timer = Timer(3, self.heartbeat_timer)
         self.leader_timer.start() # leader lease comes here
+    
+    def acks(self, len):
+        count= 0
+        for i in self.matchIndex:
+            if i>=len:
+                count+= 1
+        
+        return count
 
 class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
     def __init__(self, id:int, address: Address, neighbours):
@@ -348,7 +376,7 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         suffix= request.entries
         self.print_and_write(f"{term} and {self.term}")
         if term>self.term:
-            self.update_term(term)
+            self.update_terms(term)
             self.voted_for= -1
             self.become_follower()
             # self.timer_reset()  # check it once
@@ -359,13 +387,16 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
             self.leader_id= leaderID
         
         # print("here 2")
-        
-        logOk= (len(self.log_table)>prefixLen) and (prefixLen==0 or self.log_table[prefixLen-1]['term']==prefixTerm)
-        print(logOk)
+        # print(f"Prefix len {prefixLen}")
+        # print(f"Prefix term {prefixTerm}")
+        # print(f"Log index term {self.log_table[prefixLen-1]['term']}")
+        # print(f"Length Log table {len(self.log_table)}")
+        logOk= (len(self.log_table)>=prefixLen) and (prefixLen==0 or self.log_table[prefixLen-1]['term']==prefixTerm)
+        # print(logOk)
         if term==self.term and logOk:
             self.actualAppendEntries(prefixLen, leaderCommit, suffix)
             ack= prefixLen+len(suffix)
-            # print("Hello")
+            print(f"ack: {ack}, sending back true response to heartbeat")
             return raft_pb2.AppendEntriesResponse(status= True, ack= ack, nodeID= self.id, term= self.term)
         else:
             # print("hellllloooo")
@@ -376,25 +407,41 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         suffixLen= len(suffix)
         logTableLen= len(self.log_table)
 
-        if suffixLen>0 and logTableLen>prefixLen:
-            index= math.min(logTableLen, prefixLen+suffixLen)-1
+        # print("Reached actual append entry")
+        # print(f"suffix length {suffixLen}")
+        # print(f"prefix length {prefixLen}")
+        # print(f"logtable length {logTableLen}")
 
-            if self.log_table[index]['term']!=suffix[index-prefixLen]['term']:
+        if suffixLen>0 and logTableLen>prefixLen:
+            # print("min1")
+            index= min(logTableLen, prefixLen+suffixLen)-1
+
+            # print(index)
+            # print(f"log table {self.log_table[index]['term']}")
+            # print(f"suffix table {suffix[index-prefixLen].term}")
+
+            if self.log_table[index]['term']!=suffix[index-prefixLen].term:
                 self.log_table= self.log_table[:prefixLen]
         
         if prefixLen+suffixLen>logTableLen:
             for i in range(logTableLen-prefixLen, suffixLen):
-                print("appending to followers")
-                self.log_table.append(suffix[i])
-        
+                print("follower following the leader entries")
+                entry = {
+                    'term': suffix[i].term,
+                    'update': suffix[i].update
+                }
+                self.log_table.append(entry)
+        # print()
         if leaderCommit>self.commitIndex:
-            self.commitIndex= math.min(leaderCommit, len(self.log_table)-1)
+            # print("Reached leader commit")
+            self.commitIndex= min(leaderCommit, len(self.log_table)-1)
             while self.commitIndex>self.lastApplied:
                 key= self.log_table[self.lastApplied]['update'][1]
                 value= self.log_table[self.lastApplied]['update'][2]
                 self.applied_entries[key]= value
                 self.lastApplied+= 1
             self.commitIndex= leaderCommit
+        print(f"my log table {self.log_table}")
 
     def SetValue(self, request, context):
         key = request.key
@@ -415,6 +462,7 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
 
 
     def GetValue(self, request, context):
+        print("reached get value")
         key = request.key
         print(key)
         print(self.state)
@@ -442,6 +490,7 @@ def run(handler: RaftHandler):
     # print(f"Server has been started with address {handler.address}")
     server.start()
     server.wait_for_termination()
+
 
 if __name__ == "__main__":
     global NODE_ADDR

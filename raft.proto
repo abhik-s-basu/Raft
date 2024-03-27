@@ -37,7 +37,6 @@ message GetRequest {
 message Entry {
     int32 term = 1;
     repeated string update = 2;
-
 }
 
 message LogRequest {
