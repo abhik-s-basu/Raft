@@ -66,6 +66,13 @@ class Node():
             # print(f"dump text: {dump_text}")
             log_file.write(dump_text + '\n')
             log_file.flush()
+    
+    def last_len_helper(self):
+        with open(self.log_file_path, 'r') as log_file:
+            line_count = 0
+            for line in log_file:
+                line_count += 1
+        return line_count
 
     def print_and_write(self, message):
         print(message)
@@ -438,7 +445,6 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
 
             if self.log_table[index]['term']!=suffix[index-prefixLen].term:
                 self.log_table= self.log_table[:prefixLen]
-        last_len= prefixLen
         print(f"Prefix Length: {prefixLen}")
         if prefixLen+suffixLen>logTableLen:
             for i in range(logTableLen-prefixLen, suffixLen):
@@ -450,7 +456,8 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         # print()
         print(f"leader commit: {leaderCommit}")
         print(f"self commit: {self.commitIndex}")
-        
+
+        last_len= self.last_len_helper()
         if leaderCommit>self.commitIndex:
             print("Reached leader commit")
             self.commitIndex= min(leaderCommit, last_len-1)
