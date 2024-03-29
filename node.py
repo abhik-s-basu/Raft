@@ -199,12 +199,12 @@ class Node():
             print(self.term)
             self.nextIndex = [len(self.log_table)]* len(self.neighbours)
             self.matchIndex = [0]  * len(self.neighbours)
+            # print("new leader match index: ", self.matchIndex)
             entry = {
                 'term': self.term,
                 'update': ['NO OP', "", ""]
             }
             self.log_table.append(entry)
-            self.matchIndex[self.id] = len(self.log_table)
             self.leader_id = self.id
             # print("Test1")
             self.heartbeat_timer()
@@ -222,18 +222,13 @@ class Node():
 
         prefixLen= self.nextIndex[addr.id]
         prefixTerm= 0
-        print(f"Prefix length {prefixLen}")
 
         if prefixLen>0:
             prefixTerm= self.log_table[prefixLen-1]['term']
-        print(f"Prefix Term: {prefixTerm}")
-        print(f"Length Log table in send heartbeat {len(self.log_table)}")
 
         appending_entries= self.log_table[prefixLen:]
-        print(f"appending_entries {appending_entries}")
-        print(f"leader commit {self.commitIndex}")
         if self.nextIndex[addr.id]<=len(self.log_table):
-            print("went in this request line 230")
+            # print("went in this request line 230")
             request = raft_pb2.LogRequest(leaderID = self.id,leaderTerm = self.term,
                             prefixLen = prefixLen,
                             prefixTerm = prefixTerm,
@@ -248,18 +243,14 @@ class Node():
                             leaderCommit = self.commitIndex)
 
         try:
-            print("sent to append entries")
-            # self.print_and_write(f"Sending heartbeat for {self.term}")
+            print(f"Sent commit index: {self.commitIndex}")
             response = stub.AppendEntries(request)
-            print("received from append entries")
-            print(f"Response ID: {response.nodeID}")
-            print(f"response term: {response.term}")
-            # self.print_and_write(f"Term of {response.id}is {response.term}")
             if response.term==self.term and self.state==State.LEADER:
                 if response.status==True and response.ack>=self.matchIndex[response.nodeID]:
                     self.nextIndex[response.nodeID]= response.ack
                     self.matchIndex[response.nodeID]= response.ack #BIG CHANGE HERE
                     print("WILL COMMIT HERE")
+                    self.commit_function(response.term)
                     # COMMIT HERE
                 
                 elif self.nextIndex[response.nodeID]>0:
@@ -278,10 +269,9 @@ class Node():
         if self.state != State.LEADER:
             return
         pool = []
-        # print("Test3")
         majority= len(self.neighbours)//2
-        counter= 0
 
+        self.matchIndex[self.id] = len(self.log_table)
         for n in self.neighbours:
             if n.id != NODE_ADDR.id:
                 thread = Thread(target = self.send_heartbeat, args = (n,))
@@ -291,31 +281,33 @@ class Node():
         for t in pool:
             t.join()
         
+        print(self.matchIndex)
         # YEH SECTION THEEK KARNA HAI
-        acks = [0]* len(self.log_table)
-        print(f"test acks: {acks}")
-        print(f"self.matchIndex: {self.matchIndex}")
-        for i in range(len(acks)):
-            for j in self.neighbours:
-                if self.matchIndex[j.id] >= i:
-                    acks[i] += 1
-        print(f"real acks: {acks}")
-        ready = -1
-        for i in range(len(acks)):
-            if acks[i] > majority:
-                ready += 1
-        print(f"commit index: {self.commitIndex}")
-        if ready != -1 and ready > self.commitIndex:
-            for i in range(self.commitIndex, ready,1):
-                key = self.log_table[i]['update'][1]
-                value = self.log_table[i]['update'][2]
-                self.applied_entries[key] = value
-                print("Going to write logs")
-                self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
-                                    self.log_table[i]['update'][1], self.log_table[i]['update'][2])
+        # acks = [0]* len(self.log_table)
         
-        self.commitIndex = ready
-        self.lastApplied = ready-1
+
+        # print("Abhiks print 1")
+        # for i in range(len(acks)):
+        #     for j in self.neighbours:
+        #         if self.matchIndex[j.id] >= i:
+        #             acks[i] += 1
+        # ready = -1
+        # for i in range(len(acks)):
+        #     if acks[i] > majority:
+        #         ready += 1
+
+        # print("Abhiks print 2")
+        # if ready != -1 and ready > self.commitIndex:
+        #     for i in range(self.commitIndex, ready,1):
+        #         key = self.log_table[i]['update'][1]
+        #         value = self.log_table[i]['update'][2]
+        #         self.applied_entries[key] = value
+        #         print("Going to write logs")
+        #         self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
+        #                             self.log_table[i]['update'][1], self.log_table[i]['update'][2])
+        
+        # self.commitIndex = ready
+        # self.lastApplied = ready-1
 
         # PROBABLY YAHA TAK
 
@@ -326,11 +318,34 @@ class Node():
     
     def acks(self, len):
         count= 0
+        print(f"in acks function {self.matchIndex} and input len {len}")
         for i in self.matchIndex:
             if i>=len:
                 count+= 1
         
         return count
+    
+    def commit_function(self, term):
+        print("Akshansh 1")
+        minAcks= (len(self.neighbours)+1)//2
+        ready= -1
+        print(f"log table len in commit function: {len(self.log_table)}")
+        for i in range(1, len(self.log_table)+1):
+            print("test")
+            if self.acks(i)>=minAcks:
+                ready= i
+        
+        print("Comparison1: ", ready, self.commitIndex)
+        print("Comparison2: ", self.log_table[ready-1], term)
+        if ready!=-1 and ready>self.commitIndex and self.log_table[ready-1]['term']==term:
+            for i in range(self.commitIndex, ready):
+                print("do something here to complete the code")
+                self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
+                                    self.log_table[i]['update'][1], self.log_table[i]['update'][2])
+
+            self.commitIndex= ready
+            # self.lastApplied
+
 
 class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
     def __init__(self, id:int, address: Address, neighbours):
@@ -373,6 +388,7 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         prefixLen= request.prefixLen
         prefixTerm= request.prefixTerm
         leaderCommit= request.leaderCommit
+        print(f"in append entries leader commit jo aaya {leaderCommit}")
         suffix= request.entries
         self.print_and_write(f"{term} and {self.term}")
         if term>self.term:
@@ -422,24 +438,29 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
 
             if self.log_table[index]['term']!=suffix[index-prefixLen].term:
                 self.log_table= self.log_table[:prefixLen]
-        
+        last_len= prefixLen
+        print(f"Prefix Length: {prefixLen}")
         if prefixLen+suffixLen>logTableLen:
             for i in range(logTableLen-prefixLen, suffixLen):
-                print("follower following the leader entries")
                 entry = {
                     'term': suffix[i].term,
                     'update': suffix[i].update
                 }
                 self.log_table.append(entry)
         # print()
+        print(f"leader commit: {leaderCommit}")
+        print(f"self commit: {self.commitIndex}")
+        
         if leaderCommit>self.commitIndex:
-            # print("Reached leader commit")
-            self.commitIndex= min(leaderCommit, len(self.log_table)-1)
-            while self.commitIndex>self.lastApplied:
-                key= self.log_table[self.lastApplied]['update'][1]
-                value= self.log_table[self.lastApplied]['update'][2]
+            print("Reached leader commit")
+            self.commitIndex= min(leaderCommit, last_len-1)
+            while leaderCommit>self.commitIndex:
+                key= self.log_table[self.commitIndex]['update'][1]
+                value= self.log_table[self.commitIndex]['update'][2]
                 self.applied_entries[key]= value
-                self.lastApplied+= 1
+                self.write_to_logs(self.log_table[self.commitIndex]['term'], self.log_table[self.commitIndex]['update'][0], key, value)
+                print(f"At Node: {self.id}")
+                self.commitIndex+= 1
             self.commitIndex= leaderCommit
         print(f"my log table {self.log_table}")
 
