@@ -50,6 +50,8 @@ class Node():
         self.applied_entries = {}
         self.dump_file_path = f"./logs_node_{self.id}/dump.txt"
         self.log_file_path = f"./logs_node_{self.id}/logs.txt"
+        self.last_len= self.last_len_helper()
+        self.applied_entries_helper()
         self.term= 0
         self.start()
     # helper functions
@@ -77,6 +79,13 @@ class Node():
     def print_and_write(self, message):
         print(message)
         self.write_to_dump(message)
+
+    def applied_entries_helper(self):
+        with open(self.log_file_path, 'r') as log_file:
+            for line in log_file:
+                words = line.split()
+                if len(words) >= 3:
+                    self.applied_entries[words[1]] = words[2]
 
     def start(self):
         self.timer_init()
@@ -179,18 +188,14 @@ class Node():
             response = stub.RequestVote(request)
             if response.term > self.term:
                 self.update_terms(response.term)
-                # print(f"{self.term} hello")
                 self.become_follower()
             elif response.status == True and self.term >= response.term:
-                # print("Helllloooo")
                 votes[i.id] = 1
         except Exception as e: 
             pass
-            # print(e)
     
     def become_follower(self):
         self.update_state(State.FOLLOWER)
-        # print(f"{self.id} became follower")
         self.timer_reset()
     
     def become_leader(self):
@@ -347,8 +352,11 @@ class Node():
         if ready!=-1 and ready>self.commitIndex and self.log_table[ready-1]['term']==term:
             for i in range(self.commitIndex, ready):
                 print("do something here to complete the code")
+                key= self.log_table[i]['update'][1]
+                value= self.log_table[i]['update'][2]
+                self.applied_entries[key]= value
                 self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
-                                    self.log_table[i]['update'][1], self.log_table[i]['update'][2])
+                                    key, value)
 
             self.commitIndex= ready
             # self.lastApplied
@@ -457,17 +465,18 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         print(f"leader commit: {leaderCommit}")
         print(f"self commit: {self.commitIndex}")
 
-        last_len= self.last_len_helper()
         if leaderCommit>self.commitIndex:
             print("Reached leader commit")
-            self.commitIndex= min(leaderCommit, last_len)
+            self.commitIndex= min(leaderCommit, self.last_len)
             while leaderCommit>self.commitIndex:
                 key= self.log_table[self.commitIndex]['update'][1]
                 value= self.log_table[self.commitIndex]['update'][2]
                 self.applied_entries[key]= value
+                print(f"key: {key}")
                 self.write_to_logs(self.log_table[self.commitIndex]['term'], self.log_table[self.commitIndex]['update'][0], key, value)
                 print(f"At Node: {self.id}")
                 self.commitIndex+= 1
+            print(f"String: {self.applied_entries}")
             self.commitIndex= leaderCommit
         print(f"my log table {self.log_table}")
 
@@ -494,7 +503,7 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         key = request.key
         print(key)
         print(self.state)
-        print(self.applied_entries)
+        print(self.log_table)
         if self.state == State.LEADER:
             if self.applied_entries[key]:
                 response = {

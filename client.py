@@ -45,9 +45,7 @@ class Client():
         request = raft_pb2.GetRequest(key = k)
         print(self.curr_leader)
         try:
-            print("bc")
             response = stub.GetValue(request)
-            print("mc")
             self.curr_leader = response.leaderID
             if response.status == True: 
                 print(f"Key: {k} has the value {response.data}")

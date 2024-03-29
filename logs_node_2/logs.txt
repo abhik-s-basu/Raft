@@ -1,6 +1,0 @@
-NO OP   1
-set a a 1
-NO OP   2
-set b b 2
-set b bc 2
-set b bc 2
