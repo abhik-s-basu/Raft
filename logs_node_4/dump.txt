@@ -45,3 +45,9 @@ The server starts at [::]:50055
 2 and 2
 2 and 2
 2 and 2
+The server starts at [::]:50055
+Voted for 0 in term 1
+Node 4 election timer timed out, Starting election
+Voted for myself
+Node 4 becomes leader for term 2
+Node 4 Became Leader

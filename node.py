@@ -460,7 +460,7 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         last_len= self.last_len_helper()
         if leaderCommit>self.commitIndex:
             print("Reached leader commit")
-            self.commitIndex= min(leaderCommit, last_len-1)
+            self.commitIndex= min(leaderCommit, last_len)
             while leaderCommit>self.commitIndex:
                 key= self.log_table[self.commitIndex]['update'][1]
                 value= self.log_table[self.commitIndex]['update'][2]

@@ -4959,3 +4959,79 @@ The server starts at [::]:50051
 2 and 2
 2 and 2
 2 and 2
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Voted for 4 in term 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+Node 0 Became Leader
+The server starts at [::]:50051
+Voted for 2 in term 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+The server starts at [::]:50051
+Node 0 election timer timed out, Starting election
+Voted for myself
+Node 0 becomes leader for term 1
+Node 0 Became Leader
+The server starts at [::]:50051
+2 and 0
+2 and 2
+2 and 2
+2 and 2
+2 and 2

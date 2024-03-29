@@ -2535,3 +2535,67 @@ Voted denied for 2 in term 2
 2 and 2
 2 and 2
 2 and 2
+The server starts at [::]:50054
+Voted for 4 in term 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+The server starts at [::]:50054
+1 and 0
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+Node 3 election timer timed out, Starting election
+Voted for myself
+Node 3 becomes leader for term 2
+Node 3 Became Leader
+The server starts at [::]:50054
+1 and 0
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+Voted for 2 in term 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
+2 and 2
