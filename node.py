@@ -363,9 +363,9 @@ class Node():
                     self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
                                         key, value)
                     if self.state == State.LEADER:
-                        self.print_and_write(f"Node {self.id} (Leader) committed entry to state machine")
+                        self.print_and_write(f"Node {self.id} (Leader) committed {self.log_table[i]['update'][0]} {self.log_table[i]['update'][1]} {self.log_table[i]['update'][2]}  to state machine")
                     else:
-                        self.print_and_write(f"Node {self.id} (Follower) committed entry to state machine")
+                        self.print_and_write(f"Node {self.id} (Follower) committed {self.log_table[i]['update'][0]} {self.log_table[i]['update'][1]} {self.log_table[i]['update'][2]} entry to state machine")
                 self.commitIndex= ready
                 # self.lastApplied
 
