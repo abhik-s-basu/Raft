@@ -7,8 +7,10 @@ import random as rnd
 from addr import *
 from enum import Enum
 from concurrent import futures
+import threading
 from threading import Timer, Event, Lock, Thread
 import os 
+lock = threading.Lock()
 
 ip_port_list = [
     {"ip": "localhost", "port": 50051},
@@ -275,6 +277,17 @@ class Node():
         except:
             pass
     
+    # def safe_commit(self):
+    #     lock = threading.Lock()
+    #     with lock:
+    #         critical_section()
+
+    # def critical_section():
+
+
+
+
+
     def heartbeat_timer(self):
         if self.status == Status.CRASHED:
             return
@@ -338,28 +351,29 @@ class Node():
         return count
     
     def commit_function(self, term):
-        print("Akshansh 1")
-        minAcks= (len(self.neighbours)+1)//2
-        ready= -1
-        print(f"log table len in commit function: {len(self.log_table)}")
-        for i in range(1, len(self.log_table)+1):
-            print("test")
-            if self.acks(i)>=minAcks:
-                ready= i
-        
-        print("Comparison1: ", ready, self.commitIndex)
-        print("Comparison2: ", self.log_table[ready-1], term)
-        if ready!=-1 and ready>self.commitIndex and self.log_table[ready-1]['term']==term:
-            for i in range(self.commitIndex, ready):
-                print("do something here to complete the code")
-                key= self.log_table[i]['update'][1]
-                value= self.log_table[i]['update'][2]
-                self.applied_entries[key]= value
-                self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
-                                    key, value)
+        with lock:
+            print("Akshansh 1")
+            minAcks= (len(self.neighbours)+1)//2
+            ready= -1
+            print(f"log table len in commit function: {len(self.log_table)}")
+            for i in range(1, len(self.log_table)+1):
+                print("test")
+                if self.acks(i)>=minAcks:
+                    ready= i
+            
+            print("Comparison1: ", ready, self.commitIndex)
+            print("Comparison2: ", self.log_table[ready-1], term)
+            if ready!=-1 and ready>self.commitIndex and self.log_table[ready-1]['term']==term:
+                for i in range(self.commitIndex, ready):
+                    print("do something here to complete the code")
+                    key= self.log_table[i]['update'][1]
+                    value= self.log_table[i]['update'][2]
+                    self.applied_entries[key]= value
+                    self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
+                                        key, value)
 
-            self.commitIndex= ready
-            # self.lastApplied
+                self.commitIndex= ready
+                # self.lastApplied
 
 
 class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
