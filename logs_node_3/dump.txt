@@ -2648,3 +2648,24 @@ Voted for 0 in term 1
 1 and 1
 1 and 1
 1 and 1
+The server starts at [::]:50054
+1 and 0
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1
+1 and 1

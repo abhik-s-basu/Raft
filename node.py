@@ -478,6 +478,7 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
                 self.commitIndex+= 1
             print(f"String: {self.applied_entries}")
             self.commitIndex= leaderCommit
+            self.last_len = leaderCommit
         print(f"my log table {self.log_table}")
 
     def SetValue(self, request, context):
