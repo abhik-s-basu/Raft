@@ -11,6 +11,7 @@ message VoteResponse {
     bool status = 1;
     int32 term = 2;
     int32 nodeID = 3;
+    double interval = 4;
 }
 
 message LogItems {
@@ -46,12 +47,13 @@ message LogRequest {
     int32 prefixTerm = 4;
     int32 leaderCommit = 5;
     repeated Entry entries = 6;
+    string lease_over_time = 7;
 }
 
 message AppendEntriesResponse{
     int32 term = 1;
     int32 ack = 2;
-    int32 nodeID = 3;
+    int32 nodeID = 3;       
     bool status = 4;
 }
 

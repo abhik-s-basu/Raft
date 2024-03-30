@@ -17,11 +17,12 @@ class Client():
             self.curr_leader = random.randint(0, 4)
         channel = grpc.insecure_channel(f"{self.node_list[self.curr_leader].ip}:{self.node_list[self.curr_leader].port}")
         print(f"{self.node_list[self.curr_leader].ip}:{self.node_list[self.curr_leader].port}")
-        stub = raft_pb2_grpc.RaftStub(channel)
-        # server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-        print(self.curr_leader)
-        request = raft_pb2.SetRequest(key = k, value = v)
+        
         try:
+            stub = raft_pb2_grpc.RaftStub(channel)
+            # server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+            print(self.curr_leader)
+            request = raft_pb2.SetRequest(key = k, value = v)
             response = stub.SetValue(request)
             self.curr_leader = response.leaderID
             if response.status == True: 
@@ -30,11 +31,10 @@ class Client():
                 print(f"Requested to the wrong node, resending to new leader")
                 self.set(k,v)
         except Exception as e:
-            print(e) 
+            print("Try again")
             self.curr_leader = -1
+            print(self.curr_leader)
             pass
-            # self.curr_leader = random.randint(0, 4)
-            # self.set(k,v)
 
     def get(self, k):
         if self.curr_leader == -1:
@@ -50,10 +50,10 @@ class Client():
             if response.status == True: 
                 print(f"Key: {k} has the value {response.data}")
             else:
-                print(f"Requested at the wrong node")
+                # print(f"Requested at the wrong node")
                 self.get(k)
         except Exception as e:
-            print(e)
+            print("Try again")
             self.curr_leader = -1
             # self.curr_leader = random.randint(0, 4)
             # self.get(k,v)

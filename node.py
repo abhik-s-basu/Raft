@@ -1,6 +1,9 @@
 import grpc
 import raft_pb2_grpc 
 import raft_pb2 
+import pytz
+import time
+from datetime import datetime, timedelta
 import sys
 import math
 import random as rnd
@@ -12,14 +15,8 @@ from threading import Timer, Event, Lock, Thread
 import os 
 lock = threading.Lock()
 
-ip_port_list = [
-    {"ip": "localhost", "port": 50051},
-    {"ip": "localhost", "port": 50052},
-    {"ip": "localhost", "port": 50053},
-    {"ip": "localhost", "port": 50054},
-    {"ip": "localhost", "port": 50055},
-    # Add more entries as needed
-]
+utc_timezone = pytz.utc
+
 
 timer_lock = Event()
 term_lock = Lock()
@@ -50,6 +47,9 @@ class Node():
         self.nextIndex = []
         self.matchIndex = []
         self.applied_entries = {}
+        self.lease_acquired = False
+        self.lease_interval = 0 # see if needed here or not
+        self.lease_duration = 0
         self.dump_file_path = f"./logs_node_{self.id}/dump.txt"
         self.log_file_path = f"./logs_node_{self.id}/logs.txt"
         self.last_len= self.last_len_helper()
@@ -97,6 +97,25 @@ class Node():
         # self.timer_interval = rnd.randint(150,300) / 1000
         self.timer_interval = rnd.randint(5,10) 
         self.timer = Timer(self.timer_interval, self.timer_follower)
+    
+    def lease_timer_init(self):
+        self.lease_timer_interval = rnd.randint(4,8)
+        self.lease_over_time = datetime.now(utc_timezone) + timedelta(seconds = self.lease_timer_interval)
+        self.lease_timer = Timer(self.lease_timer_interval, self.lease_over)
+
+    def lease_over(self):
+        if self.state == State.FOLLOWER and self.status == Status.RUNNING:
+            if self.lease_timer.finished:
+                print(f"Leader lease renewal failed, stepping down as leader")
+                self.become_follower()
+
+    
+    def lease_timer_reset(self):
+        self.lease_timer.cancel()
+        self.lease_timer = Timer(self.lease_timer_interval, self.lease_over)
+        self.lease_over_time = datetime.now(utc_timezone) + timedelta(seconds = self.lease_timer_interval)
+        self.lease_timer.start()
+
     
     def timer_follower(self):
         if self.state == State.FOLLOWER and self.status == Status.RUNNING:
@@ -147,7 +166,7 @@ class Node():
         votes = [0 for i in range(len(self.neighbours))]
         for i in self.neighbours:
             if i.id == self.id:
-                self.print_and_write("Voted for myself")
+                # self.print_and_write("Voted for myself")
                 votes[i.id] = 1
                 pass
             else:
@@ -158,11 +177,13 @@ class Node():
 
         for i in requests: 
             i.join()
-        
+        print(votes)
         if self.state != State.CANDIDATE:
             return
         if sum(votes) > len(votes)//2:
-            self.print_and_write(f"Node {self.id} becomes leader for term {self.term}")
+
+            self.print_and_write(f"Node {self.id} becomes leader for term {self.term}, waiting for old lease to run out")
+            time.sleep(self.lease_interval)
             self.become_leader()
         else:
             self.update_state(State.FOLLOWER)
@@ -188,15 +209,21 @@ class Node():
             cLogTerm = cLogTerm)
 
             response = stub.RequestVote(request)
+            # print("here")
             if response.term > self.term:
+                print(self.lease_interval)
+                self.lease_interval = max(self.lease_interval, request.interval) # need to see if this is correct but should not matter
                 self.update_terms(response.term)
                 self.become_follower()
             elif response.status == True and self.term >= response.term:
+                print(self.lease_interval, "hello")
+                self.lease_interval = max(self.lease_interval, response.interval)
                 votes[i.id] = 1
         except Exception as e: 
             pass
     
     def become_follower(self):
+        self.lease_acquired = False
         self.update_state(State.FOLLOWER)
         self.timer_reset()
     
@@ -208,7 +235,8 @@ class Node():
         # self.leader_id = self.id
 
         if self.state == State.CANDIDATE:
-            self.print_and_write(f"Node {self.id} Became Leader")
+            self.print_and_write(f"Node {self.id} Became Leader and renewing lease")
+            self.lease_acquired = True
             self.update_state(State.LEADER)
             print(self.term)
             self.nextIndex = [len(self.log_table)]* len(self.neighbours)
@@ -220,7 +248,7 @@ class Node():
             }
             self.log_table.append(entry)
             self.leader_id = self.id
-            # print("Test1")
+            # self.lease_timer_init()
             self.heartbeat_timer()
             # print("Test2")
 
@@ -228,10 +256,12 @@ class Node():
         if self.status == Status.CRASHED:
             return
         
+        self.print_and_write("Leader sending heartbeat and renewing lease")
         channel = grpc.insecure_channel(f"{addr.ip}:{addr.port}")
         stub = raft_pb2_grpc.RaftStub(channel)
         request= {}
-
+        self.lease_timer_init()
+        lease_time_str = self.lease_over_time.isoformat()
         # Log Replication
 
         prefixLen= self.nextIndex[addr.id]
@@ -247,23 +277,25 @@ class Node():
                             prefixLen = prefixLen,
                             prefixTerm = prefixTerm,
                             entries = appending_entries,
-                            leaderCommit = self.commitIndex)
+                            leaderCommit = self.commitIndex,
+                            lease_over_time = lease_time_str)
 
         else:
             request = raft_pb2.LogRequest(leaderID = self.id,leaderTerm = self.term,
                             prefixLen = prefixLen,
                             prefixTerm = prefixTerm,
                             entries = [],
-                            leaderCommit = self.commitIndex)
+                            leaderCommit = self.commitIndex,
+                            lease_over_time = lease_time_str)
 
         try:
-            print(f"Sent commit index: {self.commitIndex}")
+            # print(f"Sent commit index: {self.commitIndex}")
             response = stub.AppendEntries(request)
             if response.term==self.term and self.state==State.LEADER:
                 if response.status==True and response.ack>=self.matchIndex[response.nodeID]:
                     self.nextIndex[response.nodeID]= response.ack
                     self.matchIndex[response.nodeID]= response.ack #BIG CHANGE HERE
-                    print("WILL COMMIT HERE")
+                    # print("WILL COMMIT HERE")
                     self.commit_function(response.term)
                     # COMMIT HERE
                 
@@ -275,19 +307,9 @@ class Node():
                 self.voted_for= -1
                 self.become_follower()
         except:
+            self.print_and_write(f"Error while sending RPC to {addr.id} ")
             pass
     
-    # def safe_commit(self):
-    #     lock = threading.Lock()
-    #     with lock:
-    #         critical_section()
-
-    # def critical_section():
-
-
-
-
-
     def heartbeat_timer(self):
         if self.status == Status.CRASHED:
             return
@@ -295,7 +317,6 @@ class Node():
             return
         pool = []
         majority= len(self.neighbours)//2
-
         self.matchIndex[self.id] = len(self.log_table)
         for n in self.neighbours:
             if n.id != NODE_ADDR.id:
@@ -305,45 +326,16 @@ class Node():
         
         for t in pool:
             t.join()
-        
-        print(self.matchIndex)
-        # YEH SECTION THEEK KARNA HAI
-        # acks = [0]* len(self.log_table)
-        
-
-        # print("Abhiks print 1")
-        # for i in range(len(acks)):
-        #     for j in self.neighbours:
-        #         if self.matchIndex[j.id] >= i:
-        #             acks[i] += 1
-        # ready = -1
-        # for i in range(len(acks)):
-        #     if acks[i] > majority:
-        #         ready += 1
-
-        # print("Abhiks print 2")
-        # if ready != -1 and ready > self.commitIndex:
-        #     for i in range(self.commitIndex, ready,1):
-        #         key = self.log_table[i]['update'][1]
-        #         value = self.log_table[i]['update'][2]
-        #         self.applied_entries[key] = value
-        #         print("Going to write logs")
-        #         self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
-        #                             self.log_table[i]['update'][1], self.log_table[i]['update'][2])
-        
-        # self.commitIndex = ready
-        # self.lastApplied = ready-1
-
-        # PROBABLY YAHA TAK
 
         
         # self.leader_timer.cancel()
         self.leader_timer = Timer(3, self.heartbeat_timer)
         self.leader_timer.start() # leader lease comes here
+        self.lease_timer_reset()
     
     def acks(self, len):
         count= 0
-        print(f"in acks function {self.matchIndex} and input len {len}")
+        # print(f"in acks function {self.matchIndex} and input len {len}")
         for i in self.matchIndex:
             if i>=len:
                 count+= 1
@@ -352,26 +344,28 @@ class Node():
     
     def commit_function(self, term):
         with lock:
-            print("Akshansh 1")
+            # print("Akshansh 1")
             minAcks= (len(self.neighbours)+1)//2
             ready= -1
-            print(f"log table len in commit function: {len(self.log_table)}")
+            # print(f"log table len in commit function: {len(self.log_table)}")
             for i in range(1, len(self.log_table)+1):
-                print("test")
+                # print("test")
                 if self.acks(i)>=minAcks:
                     ready= i
+                # kush akshansh if this is not true should we fail to renew leader lease?
             
-            print("Comparison1: ", ready, self.commitIndex)
-            print("Comparison2: ", self.log_table[ready-1], term)
             if ready!=-1 and ready>self.commitIndex and self.log_table[ready-1]['term']==term:
                 for i in range(self.commitIndex, ready):
-                    print("do something here to complete the code")
+                    # print("do something here to complete the code")
                     key= self.log_table[i]['update'][1]
                     value= self.log_table[i]['update'][2]
                     self.applied_entries[key]= value
                     self.write_to_logs(self.log_table[i]['term'], self.log_table[i]['update'][0], 
                                         key, value)
-
+                    if self.state == State.LEADER:
+                        self.print_and_write(f"Node {self.id} (Leader) committed entry to state machine")
+                    else:
+                        self.print_and_write(f"Node {self.id} (Follower) committed entry to state machine")
                 self.commitIndex= ready
                 # self.lastApplied
 
@@ -399,52 +393,43 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         if len(self.log_table) > 0:
             lastTerm = self.log_table[len(self.log_table)-1]['term']
         logOk = (cLogTerm > lastTerm) or (cLogTerm == lastTerm and cLogLength >= len(self.log_table))
-        # print(self.voted_for)
         if cTerm == self.term and logOk and (self.voted_for == -1 or self.voted_for == cid):
             self.voted_for = cid
             self.print_and_write(f"Voted for {cid} in term {cTerm}")
-            return raft_pb2.VoteResponse(status = True, term = self.term, nodeID = cid)
+            return raft_pb2.VoteResponse(status = True, term = self.term, nodeID = cid, interval = self.lease_interval)
         else:
             self.print_and_write(f"Voted denied for {cid} in term {cTerm}")
-            return raft_pb2.VoteResponse(status = False, term = self.term, nodeID = cid)
+            return raft_pb2.VoteResponse(status = False, term = self.term, nodeID = cid, interval = self.lease_interval)
 
     def AppendEntries(self, request, context):
         if self.status== Status.CRASHED:
             return raft_pb2.AppendEntriesResponse(status= False, ack = 0, nodeID = self.id, term=self.term)
-        # print("here 1")
         leaderID= request.leaderID
         term= request.leaderTerm
         prefixLen= request.prefixLen
         prefixTerm= request.prefixTerm
         leaderCommit= request.leaderCommit
-        print(f"in append entries leader commit jo aaya {leaderCommit}")
         suffix= request.entries
-        self.print_and_write(f"{term} and {self.term}")
+        lease_over_time_str = request.lease_over_time
+        lease_over_time = datetime.fromisoformat(lease_over_time_str)
+        self.lease_interval = (lease_over_time - datetime.now(utc_timezone)).total_seconds()
+        # self.print_and_write(f"{term} and {self.term}")
         if term>self.term:
             self.update_terms(term)
             self.voted_for= -1
             self.become_follower()
-            # self.timer_reset()  # check it once
         elif term==self.term:
-            # self.state = State.FOLLOWER
             self.become_follower()
-            # self.timer_reset()  # check it once
             self.leader_id= leaderID
         
-        # print("here 2")
-        # print(f"Prefix len {prefixLen}")
-        # print(f"Prefix term {prefixTerm}")
-        # print(f"Log index term {self.log_table[prefixLen-1]['term']}")
-        # print(f"Length Log table {len(self.log_table)}")
         logOk= (len(self.log_table)>=prefixLen) and (prefixLen==0 or self.log_table[prefixLen-1]['term']==prefixTerm)
-        # print(logOk)
         if term==self.term and logOk:
             self.actualAppendEntries(prefixLen, leaderCommit, suffix)
             ack= prefixLen+len(suffix)
-            print(f"ack: {ack}, sending back true response to heartbeat")
+            self.print_and_write(f"Node {self.id} accepted append entries RPC")
             return raft_pb2.AppendEntriesResponse(status= True, ack= ack, nodeID= self.id, term= self.term)
         else:
-            # print("hellllloooo")
+            self.print_and_write(f"Node {self.id} rejected append entries RPC")
             return raft_pb2.AppendEntriesResponse(status= False, ack= 0, nodeID= self.id, term= self.term)
         
 
@@ -452,22 +437,12 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         suffixLen= len(suffix)
         logTableLen= len(self.log_table)
 
-        # print("Reached actual append entry")
-        # print(f"suffix length {suffixLen}")
-        # print(f"prefix length {prefixLen}")
-        # print(f"logtable length {logTableLen}")
 
         if suffixLen>0 and logTableLen>prefixLen:
-            # print("min1")
             index= min(logTableLen, prefixLen+suffixLen)-1
-
-            # print(index)
-            # print(f"log table {self.log_table[index]['term']}")
-            # print(f"suffix table {suffix[index-prefixLen].term}")
 
             if self.log_table[index]['term']!=suffix[index-prefixLen].term:
                 self.log_table= self.log_table[:prefixLen]
-        print(f"Prefix Length: {prefixLen}")
         if prefixLen+suffixLen>logTableLen:
             for i in range(logTableLen-prefixLen, suffixLen):
                 entry = {
@@ -475,51 +450,44 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
                     'update': suffix[i].update
                 }
                 self.log_table.append(entry)
-        # print()
-        print(f"leader commit: {leaderCommit}")
-        print(f"self commit: {self.commitIndex}")
 
         if leaderCommit>self.commitIndex:
-            print("Reached leader commit")
             self.commitIndex= min(leaderCommit, self.last_len)
             while leaderCommit>self.commitIndex:
                 key= self.log_table[self.commitIndex]['update'][1]
                 value= self.log_table[self.commitIndex]['update'][2]
                 self.applied_entries[key]= value
-                print(f"key: {key}")
                 self.write_to_logs(self.log_table[self.commitIndex]['term'], self.log_table[self.commitIndex]['update'][0], key, value)
-                print(f"At Node: {self.id}")
                 self.commitIndex+= 1
-            print(f"String: {self.applied_entries}")
             self.commitIndex= leaderCommit
             self.last_len = leaderCommit
-        print(f"my log table {self.log_table}")
 
     def SetValue(self, request, context):
-        key = request.key
-        value = request.value
-        if self.state == State.LEADER:
-            entry = {
-                'term': self.term,
-                'update': ['set', key, value]
-            }
-            self.log_table.append(entry)
-            print(len(self.log_table))
-            response = {
-                'success': True
-            }
-            return raft_pb2.ClientResponse(status = True, leaderID = self.id, data = key)
-        else:
+        try:
+            key = request.key
+            value = request.value
+            if self.state == State.LEADER and self.lease_acquired == True:
+                self.print_and_write(f"Node {self.id} received Set Request")
+                entry = {
+                    'term': self.term,
+                    'update': ['set', key, value]
+                }
+                self.log_table.append(entry)
+                print(len(self.log_table))
+                response = {
+                    'success': True
+                }
+                return raft_pb2.ClientResponse(status = True, leaderID = self.id, data = key)
+            else:
+                return raft_pb2.ClientResponse(status = False, leaderID = self.leader_id, data = key)
+        except: 
             return raft_pb2.ClientResponse(status = False, leaderID = self.leader_id, data = key)
 
 
     def GetValue(self, request, context):
-        print("reached get value")
         key = request.key
-        print(key)
-        print(self.state)
-        print(self.log_table)
-        if self.state == State.LEADER:
+        if self.state == State.LEADER and self.lease_acquired == True:
+            self.print_and_write(f"Node {self.id} received Get Request")
             if self.applied_entries[key]:
                 response = {
                     'success': True,
@@ -527,7 +495,6 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
                 }
                 return raft_pb2.ClientResponse(status = True, leaderID = self.id, data = self.applied_entries[key])
             else:
-                print("bhola")
                 return raft_pb2.ClientResponse(status = True, leaderID = self.id, data = 'None')
         else:
             return raft_pb2.ClientResponse(status = False, leaderID = self.leader_id, data = key)
@@ -539,7 +506,6 @@ def run(handler: RaftHandler):
         handler, server
     )
     server.add_insecure_port(f'[::]:{handler.address.port}')
-    # print(f"Server has been started with address {handler.address}")
     server.start()
     server.wait_for_termination()
 
