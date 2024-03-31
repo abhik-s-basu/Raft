@@ -1,0 +1,367 @@
+The server starts at [::]:50054
+Voted for 0 in term 1
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Voted for 4 in term 2
+Voted denied for 1 in term 2
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+The server starts at [::]:50054
+Voted for 4 in term 1
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 accepted append entries RPC
+Node 3 election timer timed out, Starting election
+Node 3 becomes leader for term 2, waiting for old lease to run out
+Node 3 Became Leader and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Node 3 (Leader) committed NO OP    to state machine
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 2 
+Error while sending RPC to 0 
+Voted for 4 in term 3
+Node 3 election timer timed out, Starting election
+Voted for 4 in term 4
+Node 3 becomes leader for term 4, waiting for old lease to run out
+Node 3 Became Leader and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Node 3 (Leader) committed NO OP    to state machine
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 0 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Node 3 received Set Request
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Node 3 (Leader) committed set aaa aaa  to state machine
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Node 3 received Set Request
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Node 3 (Leader) committed set ff ff  to state machine
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 0 
+Error while sending RPC to 1 
+Node 3 received Get Request
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 1 
+Error while sending RPC to 2 
+Error while sending RPC to 0 
+Voted for 4 in term 5
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Voted for 4 in term 11
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Voted for 4 in term 23
+Voted for 4 in term 24
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Voted for 4 in term 28
+Voted for 4 in term 29
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Voted for 4 in term 32
+Voted for 4 in term 33
+Voted for 4 in term 34
+Voted for 4 in term 35
+Node 3 election timer timed out, Starting election
+Voted for 4 in term 36
+Voted for 4 in term 37
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Voted for 4 in term 43
+Voted for 4 in term 44
+Voted for 4 in term 45
+Voted for 4 in term 46
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election
+Node 3 election timer timed out, Starting election

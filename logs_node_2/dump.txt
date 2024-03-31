@@ -1,0 +1,196 @@
+The server starts at [::]:50053
+Voted for 0 in term 1
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Voted for 1 in term 2
+Voted denied for 4 in term 2
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+The server starts at [::]:50053
+Voted for 1 in term 9
+Node 2 rejected append entries RPC
+Node 2 rejected append entries RPC
+Node 2 rejected append entries RPC
+Node 2 rejected append entries RPC
+Node 2 rejected append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 election timer timed out, Starting election
+Node 2 becomes leader for term 10, waiting for old lease to run out
+Node 2 Became Leader and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 3 
+Error while sending RPC to 4 
+Node 2 (Leader) committed NO OP    to state machine
+Node 2 election timer timed out, Starting election
+Voted for 1 in term 11
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 election timer timed out, Starting election
+Node 2 becomes leader for term 12, waiting for old lease to run out
+Node 2 Became Leader and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 3 
+Error while sending RPC to 4 
+Node 2 (Leader) committed NO OP    to state machine
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Error while sending RPC to 3 
+Voted for 1 in term 13
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 election timer timed out, Starting election
+Node 2 becomes leader for term 14, waiting for old lease to run out
+Node 2 Became Leader and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 3 
+Error while sending RPC to 4 
+Node 2 (Leader) committed NO OP    to state machine
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 3 
+Error while sending RPC to 4 
+Voted for 1 in term 15
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 election timer timed out, Starting election
+Node 2 becomes leader for term 16, waiting for old lease to run out
+Node 2 Became Leader and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 3 
+Error while sending RPC to 4 
+Node 2 (Leader) committed NO OP    to state machine
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 3 
+Error while sending RPC to 4 
+Voted for 1 in term 17
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+The server starts at [::]:50053
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+The server starts at [::]:50053
+Voted for 3 in term 2
+Node 2 rejected append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+The server starts at [::]:50053
+Voted for 3 in term 4
+Voted denied for 4 in term 4
+Node 2 rejected append entries RPC
+Node 2 rejected append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC
+Node 2 accepted append entries RPC

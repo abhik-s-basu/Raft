@@ -43,7 +43,7 @@ class Client():
         stub = raft_pb2_grpc.RaftStub(channel)
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         request = raft_pb2.GetRequest(key = k)
-        print(self.curr_leader)
+        # print(self.curr_leader)
         try:
             response = stub.GetValue(request)
             self.curr_leader = response.leaderID
@@ -68,13 +68,16 @@ if __name__ == "__main__":
     client = Client(nodes)
     while(True):
         print("What do you want to do? \n 1. Set a value \n 2. Get a value \n ")
-        n = int(input())
-        if n == 1:
-            k = str(input("Enter key: "))
-            v = str(input("Enter value: "))
-            client.set(k, v)
-        elif n == 2:
-            k = str(input("Enter key: "))
-            client.get(k)
-        else: 
-            print("Invalid input")
+        try:
+            n = int(input())
+            if n == 1:
+                k = str(input("Enter key: "))
+                v = str(input("Enter value: "))
+                client.set(k, v)
+            elif n == 2:
+                k = str(input("Enter key: "))
+                client.get(k)
+            else:
+                print("Invalid input")
+        except:
+            print("Invalid choice")

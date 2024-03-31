@@ -47,7 +47,7 @@ message LogRequest {
     int32 prefixTerm = 4;
     int32 leaderCommit = 5;
     repeated Entry entries = 6;
-    string lease_over_time = 7;
+    int32 lease_over_time = 7;
 }
 
 message AppendEntriesResponse{

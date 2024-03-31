@@ -50,9 +50,11 @@ class Node():
         self.lease_acquired = False
         self.lease_interval = 0 # see if needed here or not
         self.lease_duration = 0
+        # self.lease_timer2 = 
         self.dump_file_path = f"./logs_node_{self.id}/dump.txt"
         self.log_file_path = f"./logs_node_{self.id}/logs.txt"
         self.last_len= self.last_len_helper()
+        self.flag_count= 1
         self.applied_entries_helper()
         self.term= 0
         self.start()
@@ -93,6 +95,13 @@ class Node():
         self.timer_init()
         self.timer.start()
     
+    # def timer_lease(self):
+    #     self.lease_time2 = rnd.randint(4,8)
+    #     self.lease_timer2 = Timer(self.lease_timer_interval, self.lease_finish)
+    
+    # def lease_finish(self):
+
+
     def timer_init(self):
         # self.timer_interval = rnd.randint(150,300) / 1000
         self.timer_interval = rnd.randint(5,10) 
@@ -103,9 +112,18 @@ class Node():
         self.lease_over_time = datetime.now(utc_timezone) + timedelta(seconds = self.lease_timer_interval)
         self.lease_timer = Timer(self.lease_timer_interval, self.lease_over)
 
+    def follower_lease_timer(self, interval):
+        # self.lease_timer_interval = rnd.randint(4,8)
+        # self.lease_over_time = datetime.now(utc_timezone) + timedelta(seconds = self.lease_timer_interval)
+        self.lease_timer = Timer(interval, self.lease_over)
+
     def lease_over(self):
+        print("entered lease over")
         if self.state == State.FOLLOWER and self.status == Status.RUNNING:
+            print("Entered first if condition")
+
             if self.lease_timer.finished:
+                self.lease_interval = 0
                 print(f"Leader lease renewal failed, stepping down as leader")
                 self.become_follower()
 
@@ -184,6 +202,7 @@ class Node():
 
             self.print_and_write(f"Node {self.id} becomes leader for term {self.term}, waiting for old lease to run out")
             time.sleep(self.lease_interval)
+            self.lease_interval= 0
             self.become_leader()
         else:
             self.update_state(State.FOLLOWER)
@@ -261,7 +280,8 @@ class Node():
         stub = raft_pb2_grpc.RaftStub(channel)
         request= {}
         self.lease_timer_init()
-        lease_time_str = self.lease_over_time.isoformat()
+        propInterval = self.lease_timer_interval
+        # lease_time_str = self.lease_over_time.isoformat()
         # Log Replication
 
         prefixLen= self.nextIndex[addr.id]
@@ -278,7 +298,7 @@ class Node():
                             prefixTerm = prefixTerm,
                             entries = appending_entries,
                             leaderCommit = self.commitIndex,
-                            lease_over_time = lease_time_str)
+                            lease_over_time = propInterval)
 
         else:
             request = raft_pb2.LogRequest(leaderID = self.id,leaderTerm = self.term,
@@ -286,12 +306,14 @@ class Node():
                             prefixTerm = prefixTerm,
                             entries = [],
                             leaderCommit = self.commitIndex,
-                            lease_over_time = lease_time_str)
+                            lease_over_time = propInterval)
 
         try:
             # print(f"Sent commit index: {self.commitIndex}")
             response = stub.AppendEntries(request)
             if response.term==self.term and self.state==State.LEADER:
+                if response.status==True:
+                    self.flag_count+= 1
                 if response.status==True and response.ack>=self.matchIndex[response.nodeID]:
                     self.nextIndex[response.nodeID]= response.ack
                     self.matchIndex[response.nodeID]= response.ack #BIG CHANGE HERE
@@ -316,7 +338,7 @@ class Node():
         if self.state != State.LEADER:
             return
         pool = []
-        majority= len(self.neighbours)//2
+        majority= (len(self.neighbours)+1)//2
         self.matchIndex[self.id] = len(self.log_table)
         for n in self.neighbours:
             if n.id != NODE_ADDR.id:
@@ -327,11 +349,17 @@ class Node():
         for t in pool:
             t.join()
 
+        if self.flag_count<majority:
+            print("Stepping down due to less followers")
+            self.become_follower()
+        else:
+            print("Going good")
+            self.flag_count= 1
         
-        # self.leader_timer.cancel()
-        self.leader_timer = Timer(3, self.heartbeat_timer)
-        self.leader_timer.start() # leader lease comes here
-        self.lease_timer_reset()
+            # self.leader_timer.cancel()
+            self.leader_timer = Timer(3, self.heartbeat_timer)
+            self.leader_timer.start() # leader lease comes here
+            self.lease_timer_reset()
     
     def acks(self, len):
         count= 0
@@ -367,7 +395,7 @@ class Node():
                     else:
                         self.print_and_write(f"Node {self.id} (Follower) committed {self.log_table[i]['update'][0]} {self.log_table[i]['update'][1]} {self.log_table[i]['update'][2]} entry to state machine")
                 self.commitIndex= ready
-                # self.lastApplied
+                # self.lastApplied            
 
 
 class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
@@ -410,9 +438,10 @@ class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
         prefixTerm= request.prefixTerm
         leaderCommit= request.leaderCommit
         suffix= request.entries
-        lease_over_time_str = request.lease_over_time
-        lease_over_time = datetime.fromisoformat(lease_over_time_str)
-        self.lease_interval = (lease_over_time - datetime.now(utc_timezone)).total_seconds()
+        lease_interval = request.lease_over_time
+        self.follower_lease_timer(lease_interval)
+        # lease_over_time = datetime.fromisoformat(lease_over_time_str)
+        # self.lease_interval = (lease_over_time - datetime.now(utc_timezone)).total_seconds()
         # self.print_and_write(f"{term} and {self.term}")
         if term>self.term:
             self.update_terms(term)
