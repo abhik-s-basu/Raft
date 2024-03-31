@@ -8,21 +8,20 @@ message VoteRequest {
 }
 
 message VoteResponse {
-    enum Status {
-        SUCCCESS = 0;
-        FAIL = 1;
-    }
-    Status status = 1;
+    bool status = 1;
     int32 term = 2;
     int32 nodeID = 3;
+    double interval = 4;
+}
+
+message LogItems {
+    int32 term= 1;
+    string key= 2;
+    string value= 3;
 }
 
 message ClientResponse {
-  enum Status {
-    SUCCESS = 0;
-    FAIL = 1;
-  }
-  Status status = 1;
+  bool status = 1;
   int32 leaderID = 2;
   string data = 3; 
 }
@@ -34,13 +33,11 @@ message SetRequest {
 
 message GetRequest {
     string key = 1;
-    string value = 2;
 }
 
 message Entry {
     int32 term = 1;
     repeated string update = 2;
-
 }
 
 message LogRequest {
@@ -50,17 +47,14 @@ message LogRequest {
     int32 prefixTerm = 4;
     int32 leaderCommit = 5;
     repeated Entry entries = 6;
+    int32 lease_over_time = 7;
 }
 
 message AppendEntriesResponse{
-    enum Status {
-    SUCCESS = 0;
-    FAIL = 1;
-    }
     int32 term = 1;
     int32 ack = 2;
-    int32 nodeID = 3;
-    Status status = 4;
+    int32 nodeID = 3;       
+    bool status = 4;
 }
 
 service Raft {

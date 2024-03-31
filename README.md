@@ -1,2 +1,2 @@
 # Raft
-Modified Raft Algorithm implementation (or attempt, at least(
+Modified Raft Algorithm implementation (or attempted, at least)
