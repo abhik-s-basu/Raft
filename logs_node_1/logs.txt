@@ -1,21 +1,6 @@
 NO OP   1
-set aa aa 1
-set bb bb 1
+set a a 1
+set b b 1
+set c c 1
 NO OP   2
-set ff ff 2
-NO OP   9
-NO OP   10
-NO OP   11
-NO OP   2
-set ff ff 2
-NO OP   9
-NO OP   10
-NO OP   11
-NO OP   12
-NO OP   13
-NO OP   13
-NO OP   14
-NO OP   15
-NO OP   15
-NO OP   16
-NO OP   17
+set aa aa 2

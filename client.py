@@ -4,7 +4,9 @@ import raft_pb2
 import raft_pb2_grpc
 import random
 from addr import *
-
+import os 
+import signal
+import sys
 
 
 class Client():
@@ -67,7 +69,7 @@ if __name__ == "__main__":
             nodes.append(address)
     client = Client(nodes)
     while(True):
-        print("What do you want to do? \n 1. Set a value \n 2. Get a value \n ")
+        print("What do you want to do? \n 1. Set a value \n 2. Get a value \n 3. Exit")
         try:
             n = int(input())
             if n == 1:
@@ -77,6 +79,8 @@ if __name__ == "__main__":
             elif n == 2:
                 k = str(input("Enter key: "))
                 client.get(k)
+            elif n == 3:
+                os._exit(0)
             else:
                 print("Invalid input")
         except:

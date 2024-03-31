@@ -6,15 +6,14 @@ Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Error while sending RPC to 3 
 Node 0 (Leader) committed NO OP    to state machine
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
@@ -40,8 +39,13 @@ Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
-Node 0 (Leader) committed set aa aa  to state machine
-Node 0 received Get Request
+Node 0 (Leader) committed set a a  to state machine
+Node 0 received Set Request
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Node 0 (Leader) committed set b b  to state machine
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
@@ -58,16 +62,6 @@ Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Error while sending RPC to 4 
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Leader sending heartbeat and renewing lease
-Error while sending RPC to 4 
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
@@ -84,7 +78,7 @@ Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Error while sending RPC to 4 
-Node 0 (Leader) committed set bb bb  to state machine
+Node 0 (Leader) committed set c c  to state machine
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
@@ -104,13 +98,52 @@ Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Leader sending heartbeat and renewing lease
+Error while sending RPC to 4 
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
 Leader sending heartbeat and renewing lease
@@ -138,7 +171,7 @@ The server starts at [::]:50051
 Node 0 rejected append entries RPC
 Node 0 rejected append entries RPC
 Node 0 rejected append entries RPC
-Node 0 accepted append entries RPC
+Node 0 rejected append entries RPC
 Node 0 accepted append entries RPC
 Node 0 accepted append entries RPC
 Node 0 accepted append entries RPC
@@ -151,45 +184,13 @@ Node 0 accepted append entries RPC
 Node 0 accepted append entries RPC
 Node 0 accepted append entries RPC
 Node 0 election timer timed out, Starting election
-Voted for 1 in term 4
 Node 0 election timer timed out, Starting election
-Voted for 1 in term 6
-Voted for 1 in term 7
+Node 0 election timer timed out, Starting election
+Node 0 election timer timed out, Starting election
+Node 0 election timer timed out, Starting election
 Voted for 1 in term 8
 Voted for 1 in term 9
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Voted for 2 in term 10
-Node 0 accepted append entries RPC
+Voted for 1 in term 10
+Node 0 election timer timed out, Starting election
 Voted for 1 in term 11
-Voted denied for 2 in term 11
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Voted for 2 in term 12
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Voted for 1 in term 13
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Voted for 2 in term 14
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Voted for 1 in term 15
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Voted for 2 in term 16
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Voted for 1 in term 17
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-The server starts at [::]:50051
-Voted for 4 in term 1
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
-Node 0 accepted append entries RPC
+Voted for 1 in term 12

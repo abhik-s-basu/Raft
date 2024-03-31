@@ -13,13 +13,15 @@ from concurrent import futures
 import threading
 from threading import Timer, Event, Lock, Thread
 import os 
+import signal
+import sys
 lock = threading.Lock()
 
 utc_timezone = pytz.utc
 
 
 timer_lock = Event()
-term_lock = Lock()
+term_lock = threading.Lock()
 state_lock = Lock()
 
 class State(Enum):
@@ -53,6 +55,7 @@ class Node():
         # self.lease_timer2 = 
         self.dump_file_path = f"./logs_node_{self.id}/dump.txt"
         self.log_file_path = f"./logs_node_{self.id}/logs.txt"
+        self.meta_file_path = f"./logs_node_{self.id}/metadata.txt"
         self.last_len= self.last_len_helper()
         self.flag_count= 1
         self.applied_entries_helper()
@@ -72,6 +75,12 @@ class Node():
             # print(f"dump text: {dump_text}")
             log_file.write(dump_text + '\n')
             log_file.flush()
+
+    def metadata_writer(self):
+        dump_text= f"{self.commitIndex} {self.term} {self.voted_for}"
+        with open(self.meta_file_path, 'a') as meta_file:
+            meta_file.write(dump_text + '\n')
+            meta_file.flush()
     
     def last_len_helper(self):
         with open(self.log_file_path, 'r') as log_file:
@@ -104,11 +113,11 @@ class Node():
 
     def timer_init(self):
         # self.timer_interval = rnd.randint(150,300) / 1000
-        self.timer_interval = rnd.randint(5,10) 
+        self.timer_interval = rnd.randint(5,9) 
         self.timer = Timer(self.timer_interval, self.timer_follower)
     
     def lease_timer_init(self):
-        self.lease_timer_interval = rnd.randint(4,8)
+        self.lease_timer_interval = 10
         self.lease_over_time = datetime.now(utc_timezone) + timedelta(seconds = self.lease_timer_interval)
         self.lease_timer = Timer(self.lease_timer_interval, self.lease_over)
 
@@ -125,6 +134,10 @@ class Node():
             if self.lease_timer.finished:
                 self.lease_interval = 0
                 print(f"Leader lease renewal failed, stepping down as leader")
+                self.become_follower()
+        elif self.state == State.LEADER and self.status == Status.RUNNING:
+            if self.lease_timer.finished:
+                print("Leader lease timed out stepping down")
                 self.become_follower()
 
     
@@ -143,7 +156,7 @@ class Node():
     
     def timer_reinit(self):
         # self.timer_interval = rnd.randint(150,300) / 1000
-        self.timer_interval = rnd.randint(5,10) 
+        self.timer_interval = rnd.randint(5,9) 
 
     def timer_reset(self):
         self.timer.cancel()
@@ -257,6 +270,7 @@ class Node():
             self.print_and_write(f"Node {self.id} Became Leader and renewing lease")
             self.lease_acquired = True
             self.update_state(State.LEADER)
+            self.voted_for= self.id
             print(self.term)
             self.nextIndex = [len(self.log_table)]* len(self.neighbours)
             self.matchIndex = [0]  * len(self.neighbours)
@@ -350,8 +364,10 @@ class Node():
             t.join()
 
         if self.flag_count<majority:
-            print("Stepping down due to less followers")
-            self.become_follower()
+            print("aaaaaaaaaa")
+            pass
+            # print("Stepping down due to less followers")
+            # self.become_follower()
         else:
             print("Going good")
             self.flag_count= 1
@@ -359,7 +375,7 @@ class Node():
             # self.leader_timer.cancel()
             self.leader_timer = Timer(3, self.heartbeat_timer)
             self.leader_timer.start() # leader lease comes here
-            self.lease_timer_reset()
+            self.lease_timer_init()
     
     def acks(self, len):
         count= 0
@@ -396,7 +412,10 @@ class Node():
                         self.print_and_write(f"Node {self.id} (Follower) committed {self.log_table[i]['update'][0]} {self.log_table[i]['update'][1]} {self.log_table[i]['update'][2]} entry to state machine")
                 self.commitIndex= ready
                 # self.lastApplied            
-
+    def signal_handler(self,sig, frame):
+        print('You pressed Ctrl+C! Node iD:',self.id)
+        self.metadata_writer()
+        os._exit(0)
 
 class RaftHandler(raft_pb2_grpc.RaftServicer, Node):
     def __init__(self, id:int, address: Address, neighbours):
@@ -536,7 +555,11 @@ def run(handler: RaftHandler):
     )
     server.add_insecure_port(f'[::]:{handler.address.port}')
     server.start()
+    signal.signal(signal.SIGINT, handler.signal_handler)
+    print('Press Ctrl+C')
+    # signal.pause()
     server.wait_for_termination()
+
 
 
 if __name__ == "__main__":
@@ -555,3 +578,5 @@ if __name__ == "__main__":
             n_port = int(n_address[1])
             neighbours.append(Address(int(n_id), n_ip, n_port))
     run(RaftHandler(id, address, neighbours))
+    
+
